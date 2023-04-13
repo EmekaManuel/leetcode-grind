@@ -1,0 +1,12 @@
+var isPalindrome = function(head) {
+  let straight = '';
+  let reversed = '';
+  while (head) {
+      straight += head.val;
+      reversed = head.val + reversed;
+      head = head.next;
+  };
+  return straight === reversed;
+};
+
+
