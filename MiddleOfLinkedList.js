@@ -13,11 +13,14 @@
  */
 
 var middleNode = function(head) {
-    // Initialize two pointers p1 and p2 pointing to the same destination (head)...
+    // Initialize two pointers p1 and p2 
+    // let the 2 pointers point to the same destination(head)...
     var P1 = head;
     var P2 = head;
     while(P2 != null && P2.next != null){
-        // In each iteration, we move p1 one node forward and we move p2 two nodes forward making P2 twice ahead as P1...
+        // In each iteration,
+        // we move p1 one node forward and we move p2 two nodes forward
+        // making P2 twice ahead as P1 hence P1 would be half od P2...
         P1 = P1.next;
         P2 = P2.next.next;
     }
